@@ -27,8 +27,7 @@ Check out the deployed version of the app: 🔗 [Weather Application](https://zy
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/weather-application.git
-cd weather-application
+git clone https://github.com/Saksham091/Zynetic_-Coding_Assignment.git
 ```
 
 ### 2. Install Dependencies
