@@ -2,6 +2,7 @@ import Image from "next/image";
 import AirPollution from "./Components/AirPollution/AirPollution";
 import DailyForecast from "./Components/DailyForecast/DailyForecast";
 import FeelsLike from "./Components/FeelsLike/FeelsLike";
+import Humidity from "./Components/Humidity/Humidity";
 import Navbar from "./Components/Navbar";
 import FiveDayForecast from "./Components/FiveDayForecast/FiveDayForecast";
 
@@ -18,6 +19,7 @@ export default function Home() {
           <AirPollution/>
           <DailyForecast/>
           <FeelsLike />
+          <Humidity />
         </div>
       </div>
     </div>
