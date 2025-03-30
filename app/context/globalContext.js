@@ -8,25 +8,12 @@ const GlobalContext = createContext();
 const GlobalContextUpdate = createContext();
 
 export const GlobalContextProvider = ({ children }) => {
-    const [forecast, setForecast] = useState([]);
     const [inputValue, setInputValue] = useState("");
     const [activeCityCoords, setActiveCityCoords] = useState([
         51.752021, -1.257726,
     ])
     const [geoCodedList, setGeoCodedList] = useState(defaultStates);
     const [airQuality, setAirQuality] = useState({});
-    const [fiveDayForecast, setFiveDayForecast] = useState({});
-    const [uvIndex, setUvIndex] = useState({});
-
-    const fetchForecast = async (lat, lon) => {
-        try {
-            const res = await axios.get(`api/weather?lat=${lat}&lon=${lon}`);
-
-            setForecast(res.data);
-        } catch (error) {
-            console.log("Error fetching forecast data:", error.message);
-        }
-    };
 
     // Air Quality
     const fetchAirQuality = async (lat, lon) => {
@@ -39,16 +26,6 @@ export const GlobalContextProvider = ({ children }) => {
         }
     }
 
-    // Five day forecast
-    const fetchFiveDayForecast = async (lat, lon) => {
-        try {
-            const res = await axios.get(`api/fiveday?lat=${lat}&lon=${lon}`);
-            setFiveDayForecast(res.data);
-        } catch (error) {
-            console.log("Error in fetching five day forecast data ", error.message);
-        }
-    }
-
     // geocoded list
     const fetchGeoCodedList = async (search) => {
         try {
@@ -58,16 +35,6 @@ export const GlobalContextProvider = ({ children }) => {
             console.log("Error fetching geocoded list: ", error.message)
         }
     };
-
-    // Uv Data
-    const fetchUvIndex = async (lat, lon) => {
-        try {
-            const res = await axios.get(`api/uv?lat=${lat}&lon=${lon}`);
-            setUvIndex(res.data);
-        } catch (error) {
-            console.log("Error getting uv data")
-        }
-    }
 
     // Handle Input Chnage
     const handleInput = (e) => {
@@ -102,10 +69,7 @@ export const GlobalContextProvider = ({ children }) => {
     return (
         <GlobalContext.Provider
             value={{
-                forecast,
                 airQuality,
-                fiveDayForecast,
-                uvIndex,
                 geoCodedList,
                 inputValue,
                 handleInput,
