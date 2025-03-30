@@ -10,6 +10,7 @@ import Pressure from "./Components/Pressure/Pressure";
 import Sunset from "./Components/Sunset/Sunset";
 import Temperature from "./Components/Temperature/Temperature";
 import UvIndex from "./Components/UvIndex/UvIndex";
+import Visibility from "./Components/Visibility/Visibility";
 import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./Components/FiveDayForecast/FiveDayForecast";
 
@@ -31,6 +32,7 @@ export default function Home() {
           <Population />
           <FeelsLike />
           <Humidity />
+          <Visibility />
           <Pressure />
         </div>
         <div className="mapbox-con mt-4 flex gap-4">
