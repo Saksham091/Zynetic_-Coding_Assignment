@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather Application
 
-## Getting Started
+This is an assignment project for the company. Weather Application is a single-page application that provides users with detailed weather information, including real-time weather conditions, air pollution status, wind speed, and more. If you're looking for accurate and comprehensive weather insights, Weather Application has got you covered. The website serves as a centralized hub for weather data, offering forecasts, UV index, and interactive map visualization for any city.
 
-First, run the development server:
+## 🚀 Live Demo
 
+Check out the deployed version of the app: 🔗 [Weather Application](https://zynetic-coding-assignment.vercel.app/)
+
+## 📌 Features
+
+### 🏠 Homepage
+- Provides users with detailed weather information.
+- Features a search bar allowing users to quickly find weather data for any city.
+- Designed with a user-friendly UI using Next.js, TypeScript, and Tailwind CSS.
+
+### ☁️ Weather Details
+- Displays current weather conditions, including temperature, humidity, pressure, and visibility.
+- Includes UV index, air pollution status, wind speed, and population data.
+- Integrated map feature to visualize the selected city's location.
+
+### 🔥 Additional Features
+- **Recent Search History:** Save and display the last 5 searched cities.
+- **5-Day Forecast:** Uses the 5-Day/3-Hour Forecast API to show weather trends.
+- **Dark/Light Theme Toggle.**
+
+## 🛠️ Installation & Setup
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/weather-application.git
+cd weather-application
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run the Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Build & Run for Production
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 🎯 Technologies Used
+- **Next.js** (React Framework)
+- **TypeScript**
+- **Tailwind CSS** (For styling)
+- **OpenWeather API** (Data source for weather information)
+- **Mapbox API** (For map integration)
+- **Vercel** (Hosting & deployment)
 
-To learn more about Next.js, take a look at the following resources:
+## 🔗 API Integration Details
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### OpenWeather API
+- Used for fetching real-time weather data.
+- Requires an API key from [OpenWeather](https://openweathermap.org/api).
+- **Rate Limits:** Free tier allows 60 requests per minute.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Mapbox API
+- Used for map visualization of the selected city.
+- Requires an API key from [Mapbox](https://www.mapbox.com/).
+- **Rate Limits:** Free tier allows 50,000 map loads per month.
 
-## Deploy on Vercel
+### API Key Setup
+To use the APIs, you need to obtain API keys from OpenWeather and Mapbox. Please refer to their documentation for instructions on obtaining and using API keys:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Explore real-time weather data with Weather Application! 🚀
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
