@@ -3,7 +3,9 @@ import AirPollution from "./Components/AirPollution/AirPollution";
 import DailyForecast from "./Components/DailyForecast/DailyForecast";
 import FeelsLike from "./Components/FeelsLike/FeelsLike";
 import Humidity from "./Components/Humidity/Humidity";
+import Mapbox from "./Components/Mapbox/Mapbox";
 import Navbar from "./Components/Navbar";
+import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./Components/FiveDayForecast/FiveDayForecast";
 
 
@@ -20,6 +22,24 @@ export default function Home() {
           <DailyForecast/>
           <FeelsLike />
           <Humidity />
+        </div>
+        <div className="mapbox-con mt-4 flex gap-4">
+          <Mapbox />
+          <div className="states flex flex-col gap-3 flex-1 ">
+            <h2 className="flex items-center gap-2 font-medium">
+              Top Large Cities
+            </h2>
+            <div className="flex flex-col gap-4">
+              {
+                defaultStates.map((state, index) => {
+                  return <div key={index} className="border rounded-lg cursor-pointer 
+                  dark:bg-dark-grey shadow-sm dark:shadow-none">
+                    <p className="px-6 py-4">{state.name}</p>
+                  </div>
+                })
+              }
+            </div>
+          </div>
         </div>
       </div>
     </div>
