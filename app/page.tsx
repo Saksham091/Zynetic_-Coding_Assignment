@@ -9,6 +9,7 @@ import Population from "./Components/Population/Population";
 import Pressure from "./Components/Pressure/Pressure";
 import Sunset from "./Components/Sunset/Sunset";
 import Temperature from "./Components/Temperature/Temperature";
+import UvIndex from "./Components/UvIndex/UvIndex";
 import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./Components/FiveDayForecast/FiveDayForecast";
 
@@ -26,6 +27,7 @@ export default function Home() {
           <AirPollution />
           <Sunset />
           <DailyForecast />
+          <UvIndex />
           <Population />
           <FeelsLike />
           <Humidity />
