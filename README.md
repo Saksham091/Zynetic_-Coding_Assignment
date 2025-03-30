@@ -68,7 +68,7 @@ npm start
 - **Rate Limits:** Free tier allows 50,000 map loads per month.
 
 ### API Key Setup
-To use the APIs, you need to obtain API keys from OpenWeather and Mapbox. Please refer to their documentation for instructions on obtaining and using API keys:
+To use the APIs, you need to obtain API keys from OpenWeather and Mapbox.
 
 Explore real-time weather data with Weather Application! 🚀
 
