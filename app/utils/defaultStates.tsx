@@ -1,4 +1,4 @@
-const defaultStates = [ 
+const defaultStates = [
     {
       name: "Madrid",
       country: "ES",

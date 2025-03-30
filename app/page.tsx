@@ -5,6 +5,7 @@ import FeelsLike from "./Components/FeelsLike/FeelsLike";
 import Humidity from "./Components/Humidity/Humidity";
 import Mapbox from "./Components/Mapbox/Mapbox";
 import Navbar from "./Components/Navbar";
+import Population from "./Components/Population/Population";
 import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./Components/FiveDayForecast/FiveDayForecast";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <div className="instruments grid h-full gap-4 col-span-full sm-2:col-span-2 lg:grid-cols-3 xl:grid-cols-4">
           <AirPollution/>
           <DailyForecast/>
+          <Population />
           <FeelsLike />
           <Humidity />
         </div>
