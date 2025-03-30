@@ -8,6 +8,7 @@ import Navbar from "./Components/Navbar";
 import Population from "./Components/Population/Population";
 import Pressure from "./Components/Pressure/Pressure";
 import Sunset from "./Components/Sunset/Sunset";
+import Temperature from "./Components/Temperature/Temperature";
 import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./Components/FiveDayForecast/FiveDayForecast";
 
@@ -17,13 +18,14 @@ export default function Home() {
     <Navbar />
     <div className="pb-4 flex flex-col gap-4 md:flex-row">
       <div className="flex flex-col gap-4 w-full min-w-[18rem] md:w-[35rem]">
+        <Temperature />
         <FiveDayForecast />
       </div>
       <div className="flex flex-col w-full">
         <div className="instruments grid h-full gap-4 col-span-full sm-2:col-span-2 lg:grid-cols-3 xl:grid-cols-4">
-          <AirPollution/>
+          <AirPollution />
           <Sunset />
-          <DailyForecast/>
+          <DailyForecast />
           <Population />
           <FeelsLike />
           <Humidity />
