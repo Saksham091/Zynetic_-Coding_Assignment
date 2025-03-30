@@ -6,6 +6,7 @@ import Humidity from "./Components/Humidity/Humidity";
 import Mapbox from "./Components/Mapbox/Mapbox";
 import Navbar from "./Components/Navbar";
 import Population from "./Components/Population/Population";
+import Pressure from "./Components/Pressure/Pressure";
 import defaultStates from "./utils/defaultStates";
 import FiveDayForecast from "./Components/FiveDayForecast/FiveDayForecast";
 
@@ -24,6 +25,7 @@ export default function Home() {
           <Population />
           <FeelsLike />
           <Humidity />
+          <Pressure />
         </div>
         <div className="mapbox-con mt-4 flex gap-4">
           <Mapbox />
